@@ -1,0 +1,61 @@
+.home {
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 100%;
+}
+
+.homeContent {
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://i.ytimg.com/vi/TjW1SsvbA9s/maxresdefault.jpg")
+}
+
+.quoteGenerator {
+    /* border: 1px solid black; */
+    background: rgba(80, 80, 80, 0.925);
+    height: 75%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.text {
+    /* border: 1px solid black; */
+    height: 10%;
+    font-size: 35px;
+    color: rgba(255, 255, 255, 0.452);
+}
+
+.description {
+    /* border: 1px solid black; */
+    color: rgba(255, 255, 255, 0.911);
+    height: 30%;
+    width: 75%;
+    text-align: left;
+    font-size: 20px;
+}
+
+.generateButton {
+    height: 15%;
+    width: 40%;
+    border-radius: 30px;
+    font-size: 25px;
+    transition-delay: .05s;
+    color: rgb(224, 57, 57);
+}
+
+.generateButton:hover{
+    cursor: pointer;
+    background: rgb(224, 57, 57);
+    border: rgb(224, 57, 57);
+    color: black;
+}

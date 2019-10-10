@@ -1,8 +1,12 @@
 {
   "name": "movie-quote-generator",
   "version": "0.1.0",
+  "main": "server/index.js",
+  "proxy": "http://localhost:5050",
   "private": true,
   "dependencies": {
+    "axios": "^0.19.0",
+    "express": "^4.17.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0"

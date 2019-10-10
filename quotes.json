@@ -1,0 +1,481 @@
+[
+    {
+        "id": 1,
+        "img": "http://costumerocket.com/wp-content/uploads/2019/02/Don-Corleone-tuxedo.jpg",
+        "Quote": "I'm going to make him an offer he can't refuse.",
+        "Character": "Don Corleone",
+        "Movie": "The Godfather"
+    },
+
+    {
+        "id": 2,
+        "img": "https://di2ponv0v5otw.cloudfront.net/posts/2018/08/08/5b6b985c2beb79a3533a38bc/m_5b6b98e02aa96a8fc165e052.jpg",
+        "Quote": "You talking to me?",
+        "Character": "Travis Bickle",
+        "Movie": "Taxi Driver"
+    },
+
+    {
+        "id": 3,
+        "img": "https://cdn-static.denofgeek.com/sites/denofgeek/files/styles/main_wide/public/0/27/dr.no_.sean-connery.jpg?itok=AZj5hkrN",
+        "Quote": "Bond. James Bond.",
+        "Character": "James Bond",
+        "Movie": "Dr. No"
+    },
+
+    {
+        "id": 4,
+        "img": "https://www.filmibeat.com/img/2013/06/05-clark-gable-rare-picture-1.jpg",
+        "Quote": "Frankly my dear, I don't give a damn.",
+        "Character": "Rhett Butler",
+        "Movie": "Gone with the Wind"
+    },
+
+    {
+        "id": 5,
+        "img": "https://i.pinimg.com/originals/e9/06/bc/e906bc4a42b875d756de16b43d2dc20c.jpg",
+        "Quote": "As far back as I can remember, I always wanted to be a gangster.",
+        "Character": "Henry Hill",
+        "Movie": "Goodfellas"
+    },
+
+    {
+        "id": 6,
+        "img": "https://medias.spotern.com/spots/w640/76/76756-1532336916.jpg",
+        "Quote": "I'll be back.",
+        "Character": "Terminator",
+        "Movie": "The Terminator"
+    },
+
+    {
+        "id": 7,
+        "img": "https://upload.wikimedia.org/wikipedia/en/2/27/Harry_Callahan.JPG",
+        "Quote": "Go ahead, make my day.",
+        "Character": "Harry Callahan",
+        "Movie": "Sudden Impact"
+    },
+
+    {
+        "id": 8,
+        "img": "https://comicvine1.cbsistatic.com/uploads/scale_medium/11/114183/6613467-rick_blaine.jpg",
+        "Quote": "Louis, I think this is the beginning of a beautiful friendship.",
+        "Character": "Rick Blaine",
+        "Movie": "Casablanca"
+    },
+
+    {
+        "id": 9,
+        "img": "http://starwarsanon.files.wordpress.com/2014/04/obi-wan-tatooine.jpg",
+        "Quote": "May the Force be with you.",
+        "Character": "Ben Kenobi",
+        "Movie": "Star Wars: Episode IV - A New Hope"
+    },
+
+    {
+        "id": 10,
+        "img": "https://media.giphy.com/media/3oEjI2YgA8Vtun3qy4/giphy-facebook_s.jpg",
+        "Quote": "I love the smell of napalm in the morning.",
+        "Character": "Lt. Col. Bill Kilgore",
+        "Movie": "Apocalypse Now"
+    },
+
+    {
+        "id": 11,
+        "img": "https://onceuponascreen.files.wordpress.com/2015/09/roy-scheider.jpg",
+        "Quote": "You're gonna need a bigger boat.",
+        "Character": "Martin Brody",
+        "Movie": "Jaws"
+    },
+
+    {
+        "id": 12,
+        "img": "https://i0.wp.com/www.americanrhetoric.com/images/afewgoodmenjack1.JPG",
+        "Quote": "You can't handle the truth!",
+        "Character": "Col. Nathan R. Jessep",
+        "Movie": "A Few Good Men"
+    },
+
+    {
+        "id": 13,
+        "img": "https://comicvine1.cbsistatic.com/uploads/scale_medium/11/114183/6613467-rick_blaine.jpg",
+        "Quote": "Here's looking at you, kid;",
+        "Character": "Rick Blaine",
+        "Movie": "Casablanca"
+    },
+
+    {
+        "id": 14,
+        "img": "https://cdn2.bigcommerce.com/server4900/364bb/products/131097/images/95117/25849__72605.1342529851.380.500.jpg?c=2",
+        "Quote": "Toto, I've got a feeling we're not in Kansas anymore.",
+        "Character": "Dorothy Gale",
+        "Movie": "The Wizard of Oz"
+    },
+
+    {
+        "id": 15,
+        "img": "http://i0.wp.com/suzannebrazil.com/wp-content/uploads/2016/04/Jack-Nicholson.jpg?fit=330%2C250",
+        "Quote": "Here's Johnny!",
+        "Character": "Jack Torrance",
+        "Movie": "The Shining"
+    },
+
+    {
+        "id": 16,
+        "img": "https://freebeacon.com/wp-content/uploads/2014/11/Die-Hard-Is-Not-a-Christmas-Movie-540x239.png",
+        "Quote": "Yippeee-ki-yay....",
+        "Character": "John McClane",
+        "Movie": "Die Hard"
+    },
+
+    {
+        "id": 17,
+        "img": "https://images-na.ssl-images-amazon.com/images/I/51JfKLfk2SL.jpg",
+        "Quote": "You've got to ask yourself on question: 'Do I feel lucky?' Well, do ya, punk?",
+        "Character": "Harry Callahan",
+        "Movie": "Dirty Harry"
+    },
+
+    {
+        "id": 18,
+        "img": "https://images-na.ssl-images-amazon.com/images/I/51XZeHl16uL._SX466_.jpg",
+        "Quote": "Say 'hello' to my little friend!",
+        "Character": "Tony Montana",
+        "Movie": "Scarface"
+    },
+
+    {
+        "id": 19,
+        "img": "https://i.ytimg.com/vi/Bti9_deF5gs/hqdefault.jpg",
+        "Quote": "Houston, we have a problem.",
+        "Character": "John Swigert",
+        "Movie": "Apollo 13"
+    },
+
+    {
+        "id": 20,
+        "img": "https://m.media-amazon.com/images/M/MV5BMTQ3NzAzNjUxMl5BMl5BanBnXkFtZTYwMTcxMzg2._V1_.jpg",
+        "Quote": "Mama always said life was like a box of chocolates You never know what you're gonna get.",
+        "Character": "Forrest Gump",
+        "Movie": "Forrest Gump"
+    },
+
+    {
+        "id": 21,
+        "img": "https://cinemafanatic.files.wordpress.com/2010/07/casablanca.jpg",
+        "Quote": "Of all the gin joints in all the towns in all the world, she walks into mine.",
+        "Character": "Rick Blaine",
+        "Movie": "Casablanca"
+    },
+
+    {
+        "id": 22,
+        "img": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Terminator-2-judgement-day.jpg/220px-Terminator-2-judgement-day.jpg",
+        "Quote": "Hasta la vista, baby",
+        "Character": "Terminator",
+        "Movie": "Terminator 2: Judgment Day"
+    },
+
+    {
+        "id": 23,
+        "img": "https://cdn2.bigcommerce.com/server4900/364bb/products/114894/images/81541/281991__28174.1342528191.380.500.jpg?c=2",
+        "Quote": "A martini. Shaken, not stirred.",
+        "Character": "James Bond",
+        "Movie": "Goldfinger"
+    },
+
+    {
+        "id": 24,
+        "img": "https://cdn2.lamag.com/wp-content/uploads/sites/6/2014/04/climb6601.jpg",
+        "Quote": "It ain't about how hard ya hit. It's about how hard you can get hit and keep moving forward. How much you can take and keep moving forward. That's how winning is done!",
+        "Character": "Rocky Balboa",
+        "Movie": "Rocky"
+    },
+
+    {
+        "id": 25,
+        "img": "https://miro.medium.com/max/972/0*peE-D_uCk23EL4EL.png",
+        "Quote": "I know, you did send me back to the future, but I'm back -- I'm back FROM the future...",
+        "Character": "Marty McFly",
+        "Movie": "Back to the Future Part II"
+    },
+
+    {
+        "id": 26,
+        "img": "https://pictures.ozy.com/pictures/600x337/1/8/8/5188_inigo_crop.jpg",
+        "Quote": "Hello. My name is Inigo Montoya. You killed my father. Prepare to die.",
+        "Character": "Inigo Montoya",
+        "Movie": "The Princess Bride"
+    },
+
+    {
+        "id": 27,
+        "img": "https://vignette.wikia.nocookie.net/p__/images/3/36/363B8B94-568D-49F5-8F2B-89531A7B0702.jpeg/revision/latest?cb=20181026141848&path-prefix=protagonist",
+        "Quote": "See you at the party, Richter!",
+        "Character": "Douglas Quaid",
+        "Movie": "Total Recall"
+    },
+
+    {
+        "id": 28,
+        "img": "https://mla21yeiph1a.i.optimole.com/l79iqiZeyU8/w:800/h:450/q:auto/https://www.monstersandcritics.com/wp-content/uploads/2018/11/Mufasa.jpg",
+        "Quote": "Remember who you are.",
+        "Character": "Mufasa",
+        "Movie": "Lion King"
+    },
+
+    {
+        "id": 29,
+        "img": "https://upload.wikimedia.org/wikipedia/en/2/27/Harry_Callahan.JPG",
+        "Quote": "A man's got to know his limitations.",
+        "Character": "Harry Callahan",
+        "Movie": "Magnum Force"
+    },
+
+    {
+        "id": 30,
+        "img": "https://vignette.wikia.nocookie.net/homealone/images/d/dc/Angels_With_Filthy_Souls.jpg/revision/latest?cb=20121119125857",
+        "Quote": "Merry Christmas ya filthy animal.",
+        "Character": "Johnny",
+        "Movie": "Home Alone 2: Lost in New York"
+    },
+
+    {
+        "id": 31,
+        "img": "",
+        "Quote": "Are you not entertained!",
+        "Character": "Maximus",
+        "Movie": "Gladiator"
+    },
+
+    {
+        "id": 32,
+        "img": "",
+        "Quote": "It's a trap!",
+        "Character": "Admiral Ackbar",
+        "Movie": "Star Wars: Episode VI - Return of the Jedi"
+    },
+
+    {
+        "id": 33,
+        "img": "",
+        "Quote": "Roads? Where we're going, we don't need roads.",
+        "Character": "Dr. Emmett Brown",
+        "Movie": "Back to the Future"
+    },
+
+    {
+        "id": 34,
+        "img": "",
+        "Quote": "Welcome to the party pal.",
+        "Character": "John McClane",
+        "Movie": "Die Hard"
+    },
+
+    {
+        "id": 35,
+        "img": "",
+        "Quote": "YOU SHALL NOT PASS!",
+        "Character": "Gandalf the Grey",
+        "Movie": "The Lord of the Rings: The Fellowship of the Ring"
+    },
+
+    {
+        "id": 36,
+        "img": "",
+        "Quote": "Do, or do not. There is not try.",
+        "Character": "Yoda",
+        "Movie": "Star Wars: Episode V - The Empire Strikes Back"
+    },
+
+    {
+        "id": 37,
+        "img": "",
+        "Quote": "Let them see what kind of a person I am. I'm not even going to swat that fly. I hope they are watching...they'll see. They'll see and they'll say, 'Why, she wouldn't even harm a fly...",
+        "Character": "Mama Bates",
+        "Movie": "Psycho"
+    },
+
+    {
+        "id": 38,
+        "img": "",
+        "Quote": "Keep your friends close, but your enemies closer.",
+        "Character": "",
+        "Movie": "The Godfather: Part II"
+    },
+
+    {
+        "id": 39,
+        "img": "",
+        "Quote": "Kids these days. They just don't get scared like they used to.",
+        "Character": "",
+        "Movie": "Monsters, Inc."
+    },
+
+    {
+        "id": 40,
+        "img": "https://m.media-amazon.com/images/M/MV5BMTQ0MzAxMDg3MF5BMl5BanBnXkFtZTcwNDg1NTgwMw@@._V1_SY1000_CR0,0,1438,1000_AL_.jpg",
+        "Quote": "There's no crying in baseball!",
+        "Character": "Jimmy Dugan",
+        "Movie": "A League of Their Own"
+    },
+
+    {
+        "id": 41,
+        "img": "https://m.media-amazon.com/images/M/MV5BMTQ5NTI4NDAxMV5BMl5BanBnXkFtZTcwMTQxNDY3Mw@@._V1_SY1000_CR0,0,1496,1000_AL_.jpg",
+        "Quote": "Get busy livin' or get busy dyin'.",
+        "Character": "Andy Defresne",
+        "Movie": "Shawshank Redemption"
+    },
+
+    {
+        "id": 42,
+        "img": "https://m.media-amazon.com/images/M/MV5BMTc1MTUxMTAyNl5BMl5BanBnXkFtZTcwMjc5MjA0NQ@@._V1_SY1000_CR0,0,670,1000_AL_.jpg",
+        "Quote": "Failure is not an option.",
+        "Character": "Gene Kranz",
+        "Movie": "Apollo 13"
+    },
+
+    {
+        "id": 43,
+        "img": "https://m.media-amazon.com/images/M/MV5BMTYxNjM1MTg2Nl5BMl5BanBnXkFtZTcwNTQ5MjU0NQ@@._V1_SY1000_CR0,0,1504,1000_AL_.jpg",
+        "Quote": "How do you like them apples?",
+        "Character": "Will Hunting",
+        "Movie": "Good Will Hunting"
+    },
+
+    {
+        "id": 44,
+        "img": "https://m.media-amazon.com/images/M/MV5BMTMzNDU3NDkwMF5BMl5BanBnXkFtZTYwMDc1Mzc3._V1_.jpg",
+        "Quote": "The first rule of the Fight Club is: you do not talk about the Fight Club.",
+        "Character": "Tyler Durden",
+        "Movie": "Fight Club"
+    },
+
+    {
+        "id": 45,
+        "img": "https://m.media-amazon.com/images/M/MV5BMjAwMTcxNDA3NF5BMl5BanBnXkFtZTcwNzM1MTcwNA@@._V1_SY1000_CR0,0,1542,1000_AL_.jpg",
+        "Quote": "It is not our abilities that show what we truly are. It is our choices.",
+        "Character": "Professor Albus Dumbledore",
+        "Movie": "Harry Potter and the Chamber of Secrets"
+    },
+
+    {
+        "id": 46,
+        "img": "https://m.media-amazon.com/images/M/MV5BMjU5NjQyNTcwOV5BMl5BanBnXkFtZTcwMzc3NzUyMw@@._V1_SX1500_CR0,0,1500,999_AL_.jpg",
+        "Quote": "You stay classy, San Diego.",
+        "Character": "Ron Burgandy",
+        "Movie": "Anchorman: The Legend of Ron Burgundy"
+    },
+
+    {
+        "id": 47,
+        "img": "https://m.media-amazon.com/images/M/MV5BMjEzMDI5Mjk2M15BMl5BanBnXkFtZTcwOTYxMTk2Mw@@._V1_SY1000_CR0,0,666,1000_AL_.jpg",
+        "Quote": "You either die a hero or you live long enough to see yourself become the villain.",
+        "Character": "Harvey Dent",
+        "Movie": "The Dark Knight"
+    },
+
+    {
+        "id": 48,
+        "img": "https://m.media-amazon.com/images/M/MV5BMjE3Njg1MzYzOV5BMl5BanBnXkFtZTcwNjEyODgwNA@@._V1_SY1000_CR0,0,1776,1000_AL_.jpg",
+        "Quote": "It is the quality of ones convictions that determines success, not the number of followers.",
+        "Character": "Remus Lupin",
+        "Movie": "Harry Potter and the Deathly Hallows: Part 2"
+    },
+
+    {
+        "id": 49,
+        "img": "https://m.media-amazon.com/images/M/MV5BMTk3MDI3OTUxOF5BMl5BanBnXkFtZTcwNDM1NzI3Mg@@._V1_.jpg",
+        "Quote": "That rug really tied the room together.",
+        "Character": "The Dude",
+        "Movie": "The Big Lebowski"
+    },
+
+    {
+        "id": 50,
+        "img": "",
+        "Quote": "It's alive! It's alive!",
+        "Character": "",
+        "Movie": "Frankenstein"
+    },
+
+    {
+        "id": 51,
+        "img": "",
+        "Quote": "It's a flesh wound.",
+        "Character": "",
+        "Movie": "Monty Python and the Holy Grail"
+    },
+
+    {
+        "id": 52,
+        "img": "",
+        "Quote": "These aren't the droids you're looking for.",
+        "Character": "",
+        "Movie": "Star Wars: Episode IV - A New Hope"
+    },
+
+    {
+        "id": 53,
+        "img": "",
+        "Quote": "Thank You Sir, Please may I have another.",
+        "Character": "",
+        "Movie": "National Lampoon's Animal House"
+    },
+
+    {
+        "id": 54,
+        "img": "",
+        "Quote": "Cinderella story. Outta nowhere. A former greenskeeper, now, about to become the Masters champion. It looks like a mirac...It's in the hole! It's in the hole! It's in the hole!",
+        "Character": "Carl Spackler",
+        "Movie": "Caddyshack"
+    },
+
+    {
+        "id": 55,
+        "img": "",
+        "Quote": "I am serious...and don't call me Shirley",
+        "Character": "Dr. Rumack",
+        "Movie": "Airplane!"
+    },
+
+    {
+        "id": 56,
+        "img": "",
+        "Quote": "Snakes, why does it have to be snakes.",
+        "Character": "Indiana Jones",
+        "Movie": "Raiders of the Lost Ark"
+    },
+
+    {
+        "id": 57,
+        "img": "",
+        "Quote": "E.T. phone home.",
+        "Character": "E.T.",
+        "Movie": "E.T. the Extra-Terrestrial"
+    },
+
+    {
+        "id": 58,
+        "img": "",
+        "Quote": "Nothing is over...NOTHING!",
+        "Character": "John Rambo",
+        "Movie": "First Blood"
+    },
+
+    {
+        "id": 59,
+        "img": "",
+        "Quote": "The only winning move is not to play.",
+        "Character": "",
+        "Movie": "WarGames"
+    },
+
+    {
+        "id": 60,
+        "img": "",
+        "Quote": "I feel the need...the need for speed!",
+        "Character": "",
+        "Movie": "Top Gun"
+    }
+]

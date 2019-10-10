@@ -1,0 +1,13 @@
+.favoritesPage {
+    /* border: 1px solid red; */
+    background: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.favoritesTitle {
+    /* border: 1px solid red; */
+    color: rgba(255, 255, 255, 0.863);
+}
