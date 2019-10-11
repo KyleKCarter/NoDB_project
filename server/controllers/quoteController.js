@@ -1,7 +1,6 @@
 const quotes = require("../../quotes.json");
 
 let randomQuotes = [];
-let quote = [];
 
 function addQuote(req, res) {
     randomQuotes.push(
@@ -11,7 +10,7 @@ function addQuote(req, res) {
 }
 
 function getQuote(req, res) {
-    res.status(200).json(randomQuotes);
+    res.status(200).json(quotes[Math.floor(Math.random()*quotes.length)]);
 }
 
 module.exports = {

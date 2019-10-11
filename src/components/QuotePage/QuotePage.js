@@ -18,7 +18,8 @@ class QuotePage extends Component {
         .then(response => {
             console.log(response);
             console.log(response.data);
-            this.setState({quote: response.data})
+            this.setState({quote: response.data});
+            
         })
         .catch(error => {
             console.log(error);
@@ -26,23 +27,18 @@ class QuotePage extends Component {
     }
 
     render() {
-        let mappedQuotes = this.state.quote.map(val => {
-            return (
-                <div className="quoteCard">
-                    <img src={val.img} alt="character_image" className="characterImage"/>
-                    <h2 className="quote">"{val.Quote}"</h2>
-                    <h3 className="character_movie">-{val.Character} ({val.Movie})</h3>
-                </div>
-            )
-        })
+        console.log(this.state.quote)
         return(
             <div className="quotePage">
                 <nav className="quoteNav">
-                    <QuoteGenerator />  
+                    <QuoteGenerator currentPage={this.props.currentPage}
+                                    changeView={this.props.changeView} />  
                 </nav>
-                <h1 className="quotePageTitle">Quote</h1>
-                {mappedQuotes}
-
+                <div className="quoteCard">
+                    <img src={this.state.quote.img} alt="character_image" className="characterImage"/>
+                    <h2 className="quote">"{this.state.quote.Quote}"</h2>
+                    <h3 className="character_movie">-{this.state.quote.Character} ({this.state.quote.Movie})</h3>
+                </div>
             </div>
         )
     }

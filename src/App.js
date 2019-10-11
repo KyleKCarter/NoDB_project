@@ -43,7 +43,8 @@ class App extends Component {
           :
             this.state.currentPage === 'Quote'
           ?
-            <QuotePage />
+            <QuotePage currentPage={currentPage} 
+                      changeView={changeView} />
           :
             null
         }
