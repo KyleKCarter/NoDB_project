@@ -11,19 +11,26 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      currentPage: 'Home'
+      currentPage: 'Home',
+      img: "",
+      quote: "",
+      character: "",
+      movie: "",
+      favoriteQuotes: []
     }
   }
 
   changeView = () => {
     this.setState({ currentPage: 'Quote' });
-    console.log(this.state.currentPage);
+    // console.log(this.state.currentPage);
   }
 
   render() {
-    console.log(this.state.currentPage);
+    // console.log(this.state.currentPage);
     const { currentPage } = this.state;
     const { changeView } = this;
+    const { img, quote, character, movie } = this.state;
+    const {favoriteQuotes} = this.state;
     return(
       <div className="movieQuotes">
         <nav className="navBar">
@@ -39,12 +46,17 @@ class App extends Component {
           :
             this.state.currentPage === 'Favorite Quotes'
           ?
-            <FavoritesPage />
+            <FavoritesPage favoriteQuotes={favoriteQuotes}/>
           :
             this.state.currentPage === 'Quote'
           ?
             <QuotePage currentPage={currentPage} 
-                      changeView={changeView} />
+                      changeView={changeView} 
+                      img={img}
+                      quote={quote}
+                      character={character}
+                      movie={movie}
+                      favoriteQuotes={favoriteQuotes}/>
           :
             null
         }

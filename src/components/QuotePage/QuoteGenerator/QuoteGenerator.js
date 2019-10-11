@@ -33,7 +33,7 @@ class QuoteGenerator extends Component{
     }
 
     render() {
-        console.log(this.props.currentPage);
+        // console.log(this.props.currentPage);
         return(
             <div>
                 <button className="newQuote" onClick={this.handleClick} >New Quote</button>
