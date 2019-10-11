@@ -17,8 +17,8 @@ class QuotePage extends Component {
     componentDidMount() {
         axios.get("/api/quote")
         .then(response => {
-            console.log(response);
-            // console.log(response.data);
+            // console.log(response);
+            console.log(response.data);
             this.setState({quote: response.data});
             
         })
@@ -27,8 +27,10 @@ class QuotePage extends Component {
         })
     }
 
+    //function to get new quote from server
+    
+
     render() {
-        // console.log(this.state.quote)
         return(
             <div className="quotePage">
                 <nav className="quoteNav">
@@ -46,7 +48,9 @@ class QuotePage extends Component {
                                 quote={this.props.quote}
                                 character={this.props.character}
                                 movie={this.props.movie}
-                                favoriteQuotes={this.props.favoriteQuotes}/>
+                                favoriteQuotes={this.props.favoriteQuotes}
+                                id={this.state.quote.id}
+                                changeStateFavorite={this.props.changeStateFavorite}/>
                 </footer>
             </div>
         )

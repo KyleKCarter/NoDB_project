@@ -1,19 +1,19 @@
 const quotes = require("../../quotes.json");
 
-let randomQuotes = [];
+let newQuote = []
 
-function addQuote(req, res) {
-    randomQuotes.push(
+function addNewQuote(req, res) {
+    newQuote.push(
         quotes[Math.floor(Math.random()*quotes.length)]
     )
-    res.status(200).json(randomQuotes)
+    res.status(200).json(newQuote)
 }
 
-function getQuote(req, res) {
+function getNewQuote(req, res) {
     res.status(200).json(quotes[Math.floor(Math.random()*quotes.length)]);
 }
 
 module.exports = {
-    addQuote,
-    getQuote,
+    addNewQuote,
+    getNewQuote
 }

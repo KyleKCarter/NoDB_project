@@ -25,12 +25,18 @@ class App extends Component {
     // console.log(this.state.currentPage);
   }
 
+  changeStateFavorite = (val) => {
+    this.setState({ favoriteQuotes: val})
+    // console.log(this.state.favoriteQuotes);
+  }
+
   render() {
     // console.log(this.state.currentPage);
     const { currentPage } = this.state;
     const { changeView } = this;
     const { img, quote, character, movie } = this.state;
-    const {favoriteQuotes} = this.state;
+    const { favoriteQuotes } = this.state;
+    const { changeStateFavorite } = this;
     return(
       <div className="movieQuotes">
         <nav className="navBar">
@@ -46,7 +52,12 @@ class App extends Component {
           :
             this.state.currentPage === 'Favorite Quotes'
           ?
-            <FavoritesPage favoriteQuotes={favoriteQuotes}/>
+            <FavoritesPage favoriteQuotes={favoriteQuotes}
+                            changeStateFavorite={changeStateFavorite}
+                            img={img}
+                            quote={quote}
+                            character={character}
+                            movie={movie}/>
           :
             this.state.currentPage === 'Quote'
           ?
@@ -56,7 +67,8 @@ class App extends Component {
                       quote={quote}
                       character={character}
                       movie={movie}
-                      favoriteQuotes={favoriteQuotes}/>
+                      favoriteQuotes={favoriteQuotes}
+                      changeStateFavorite={changeStateFavorite}/>
           :
             null
         }

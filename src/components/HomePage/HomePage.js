@@ -23,7 +23,7 @@ class HomePage extends Component {
             movie
         }).then(response => {
             this.props.changeView();
-            console.log(response);
+            // console.log(response);
         }).catch(error => {
             console.log(error);
         })

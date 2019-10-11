@@ -16,17 +16,16 @@ class QuoteGenerator extends Component{
     }
 
     handleClick = (e) => {
-        console.log("Working")
+        console.log("New Quote")
         const {img, quote, character, movie} = this.state;
         e.preventDefault();
-        axios.post("api/quote/", {
+        axios.post("api/new_quote/", {
             img,
             quote,
             character,
             movie
         }).then(response => {
             console.log(response.data);
-            this.props.changeView();
         }).catch(error => {
             console.log(error);
         })

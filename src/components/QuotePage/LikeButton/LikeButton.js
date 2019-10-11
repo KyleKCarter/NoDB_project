@@ -6,10 +6,6 @@ class LikeButton extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            img: "",
-            quote: "",
-            character: "",
-            movie: "",
             favoriteQuotes: []
         }
     }
@@ -17,6 +13,7 @@ class LikeButton extends Component {
     addToFavorites = (e, id) => {
         const {img, quote, character, movie} = this.state;
         e.preventDefault();
+        // console.log(id);
         axios.post(`/api/favorites/${id}`, {
             img,
             quote,
@@ -26,17 +23,19 @@ class LikeButton extends Component {
         })
         .then(response => {
             console.log(response.data);
+            console.log("Liked");
+            //invoke changeState function
+            this.props.changeStateFavorite(response.data);
         })
         .catch(error => {
             console.log(error);
         })
-        id++
     }
     
     render() {
         return(
             <div>
-                <img onClick={this.addToFavorites} className="likeButton" src="https://www.pngkey.com/png/full/161-1614667_youtube-thumbs-up-png-thumbs-up-button-png.png" alt="like_button"/>
+                <img onClick={(e) => this.addToFavorites(e, this.props.id)} className="likeButton" src="https://www.pngkey.com/png/full/161-1614667_youtube-thumbs-up-png-thumbs-up-button-png.png" alt="like_button"/>
             </div>
         )
     }

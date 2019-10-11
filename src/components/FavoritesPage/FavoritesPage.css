@@ -15,3 +15,13 @@
     /* justify-self: flex-start; */
     align-self: flex-start;
 }
+
+.favoriteContent {
+    border: 1px solid green;
+    display: flex;
+    flex-direction: row;
+}
+
+.favoriteQuoteCards {
+    border: 1px solid red;
+}
