@@ -28,10 +28,3 @@
     height: 55%;
     width: 30%;
 }
-
-.dislikeButton {
-    background: 1px solid red;
-    height: 5vh;
-    width: 3vw;
-    align-self: flex-start;
-}

@@ -15,6 +15,7 @@ class QuotePage extends Component {
     }
 
     componentDidMount() {
+        console.log("First Quote");
         axios.get("/api/quote/")
         .then(response => {
             this.setState({quote: response.data});
@@ -42,6 +43,7 @@ class QuotePage extends Component {
     }
 
     render() {
+        console.log(this.state.quote);
         const {quote} = this.state;
         const {getNewQuote} = this;
         return(

@@ -1,11 +1,13 @@
 import React, {Component} from "react";
 import axios from "axios";
+import "./RemoveFavorite.css";
 
 class RemoveFavorite extends Component {
   
     unlikeQuote = () => {
         axios.delete(`/api/favorites/${this.props.val.id}`)
         .then(response => {
+            console.log("Unliked");
             console.log(response.data);
             this.props.updateFavoriteQuotes(response.data);
         })
