@@ -25,14 +25,15 @@ class QuoteGenerator extends Component{
             character,
             movie
         }).then(response => {
-            console.log(response.data);
+            // console.log(response.data);
+            this.props.changeStateQuote(response.data)
         }).catch(error => {
             console.log(error);
         })
     }
 
     render() {
-        // console.log(this.props.currentPage);
+        console.log(this.props.quote);
         return(
             <div>
                 <button className="newQuote" onClick={this.handleClick} >New Quote</button>

@@ -2,3 +2,7 @@
     height: 5vh;
     width: 5vh;
 }
+
+.likeButton:hover {
+    cursor: pointer;
+}

@@ -22,8 +22,8 @@ class LikeButton extends Component {
             id
         })
         .then(response => {
-            console.log(response.data);
             console.log("Liked");
+            console.log(response.data);
             //invoke changeState function
             this.props.changeStateFavorite(response.data);
         })

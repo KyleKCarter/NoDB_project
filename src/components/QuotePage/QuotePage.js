@@ -15,10 +15,10 @@ class QuotePage extends Component {
     }
 
     componentDidMount() {
-        axios.get("/api/quote")
+        axios.get("/api/quote/")
         .then(response => {
             // console.log(response);
-            console.log(response.data);
+            // console.log(response.data);
             this.setState({quote: response.data});
             
         })
@@ -28,14 +28,31 @@ class QuotePage extends Component {
     }
 
     //function to get new quote from server
-    
+    changeStateQuote = (val) => {
+        this.setState({quote: val})
+        // console.log(this.state.quote);
+    }
+
+    getNewQuote() {
+        axios.get("/api/new_quote/")
+        .then(response => {
+            console.log(response.data);
+            this.setState({quote: response.data});
+        })
+        .catch(error => {
+            console.log(error);
+        })
+    }
 
     render() {
+        const {changeStateQuote} = this;
+        const {quote} = this.state;
+        // console.log(this.state.quote);
         return(
             <div className="quotePage">
                 <nav className="quoteNav">
-                    <QuoteGenerator currentPage={this.props.currentPage}
-                                    changeView={this.props.changeView} />  
+                    <QuoteGenerator changeStateQuote={changeStateQuote}
+                                    quote={quote}/>  
                 </nav>
                 <div className="quoteCard">
                     <img src={this.state.quote.img} alt="character_image" className="characterImage"/>
@@ -45,12 +62,13 @@ class QuotePage extends Component {
                 </div>
                 <footer>
                     <LikeButton img={this.props.img}
-                                quote={this.props.quote}
+                                quote={quote}
                                 character={this.props.character}
                                 movie={this.props.movie}
                                 favoriteQuotes={this.props.favoriteQuotes}
                                 id={this.state.quote.id}
-                                changeStateFavorite={this.props.changeStateFavorite}/>
+                                changeStateFavorite={this.props.changeStateFavorite}
+                                changeStateQuote={changeStateQuote}/>
                 </footer>
             </div>
         )

@@ -32,7 +32,8 @@ class FavoritesPage extends Component {
                     <img src={val.img} alt="character_img" className="characterImage"/>
                     <h2 className="quote">"{val.Quote}"</h2>
                     <h3 className="character">-{val.Character}</h3>
-                    <h4 className="movie">({val.Movie})</h4>
+                    <h4 className="movie">({val.Movie})</h4> 
+                    <img className="dislikeButton" src="https://www.pngfind.com/pngs/m/56-564486_official-facebook-like-button-png-dislike-png-transparent.png" alt="dislike"/>
                 </div>
             )
         })
