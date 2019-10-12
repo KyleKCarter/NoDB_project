@@ -28,10 +28,9 @@ class QuotePage extends Component {
     //function to get new quote from server//
         
     getNewQuote() {
+        console.log("New Quote");
         axios.get("/api/new_quote/")
         .then(response => {
-            console.log("hit")
-            console.log(typeof response.data)
             this.setState({quote: response.data});
             //setState is not working...it cannot read property 'setState' of undefined//
             //forgot to bind, error was coming up because the quote was set to null and the component could not find the function 

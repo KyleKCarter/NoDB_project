@@ -15,10 +15,8 @@ class FavoritesPage extends Component {
     }
 
     componentDidMount() {
-        console.log(this.props.favoriteQuotes)
         axios.get(`/api/favorites/`)
         .then(response => {
-            console.log(response.data);
             this.setState({ favoriteQuotes: response.data })
         })
         .catch(error => {
@@ -33,7 +31,6 @@ class FavoritesPage extends Component {
     render() {
         console.log(this.state.favoriteQuotes);
         let mappedFavoriteQuotes = this.state.favoriteQuotes.map( val => {
-            console.log(val);
             return(
                 <div className="favoriteQuoteCards">
                     <img src={val.img} alt="character_img" className="characterImage"/>
