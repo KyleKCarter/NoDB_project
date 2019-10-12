@@ -15,7 +15,20 @@ function getFavorites(req, res) {
     res.status(200).json(favoriteQuotes);
 }
 
+function removeFromFavorites(req, res) {
+    const {id} = req.params;
+    console.log(id);
+    const index = favoriteQuotes.findIndex(val => {
+        if(val.id == id) {
+            return true;
+        }
+    });
+    favoriteQuotes.splice(index, 1);
+    res.status(200).json(favoriteQuotes);
+}
+
 module.exports = {
     addToFavorites,
-    getFavorites
+    getFavorites,
+    removeFromFavorites
 }

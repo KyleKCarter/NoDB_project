@@ -477,5 +477,13 @@
         "Quote": "I feel the need...the need for speed!",
         "Character": "Maverick",
         "Movie": "Top Gun"
+    },
+
+    {
+        "id": 61,
+        "img": "",
+        "Quote": "Sometimes you're flush and sometimes you're bust, and when you're up, it's never as good as it seems, and when you're down, you never think you'll be up again, but life goes on.",
+        "Character": "Frederick Jung",
+        "Movie": "Blow"
     }
 ]

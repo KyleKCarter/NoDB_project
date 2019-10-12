@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import "./QuotePage.css";
 
 //components
-import QuoteGenerator from "./QuoteGenerator/QuoteGenerator";
 import axios from "axios";
 import LikeButton from "./LikeButton/LikeButton";
 
@@ -12,47 +11,44 @@ class QuotePage extends Component {
         this.state = {
             quote: []
         }
+        this.getNewQuote = this.getNewQuote.bind(this);
     }
 
     componentDidMount() {
         axios.get("/api/quote/")
         .then(response => {
-            // console.log(response);
-            // console.log(response.data);
             this.setState({quote: response.data});
-            
         })
         .catch(error => {
             console.log(error);
         })
     }
 
-    //function to get new quote from server
-    changeStateQuote = (val) => {
-        this.setState({quote: val})
-        // console.log(this.state.quote);
-    }
 
+    //function to get new quote from server//
+        
     getNewQuote() {
         axios.get("/api/new_quote/")
         .then(response => {
-            console.log(response.data);
+            console.log("hit")
+            console.log(typeof response.data)
             this.setState({quote: response.data});
+            //setState is not working...it cannot read property 'setState' of undefined//
+            //forgot to bind, error was coming up because the quote was set to null and the component could not find the function 
+            //because it was not binded. Need to either bind the function under the this.state or turn the function into an arrow function.
         })
         .catch(error => {
-            console.log(error);
+        console.log(error);
         })
     }
 
     render() {
-        const {changeStateQuote} = this;
         const {quote} = this.state;
-        // console.log(this.state.quote);
+        const {getNewQuote} = this;
         return(
             <div className="quotePage">
                 <nav className="quoteNav">
-                    <QuoteGenerator changeStateQuote={changeStateQuote}
-                                    quote={quote}/>  
+                    <button className="newQuote" onClick={getNewQuote}>New Quote</button>  
                 </nav>
                 <div className="quoteCard">
                     <img src={this.state.quote.img} alt="character_image" className="characterImage"/>
@@ -68,7 +64,7 @@ class QuotePage extends Component {
                                 favoriteQuotes={this.props.favoriteQuotes}
                                 id={this.state.quote.id}
                                 changeStateFavorite={this.props.changeStateFavorite}
-                                changeStateQuote={changeStateQuote}/>
+                                />
                 </footer>
             </div>
         )

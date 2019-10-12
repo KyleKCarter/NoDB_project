@@ -19,6 +19,21 @@
     padding-top: 30px;
 }
 
+.newQuote {
+    height: 75%;
+    width: 12.5vw;
+    border-radius: 10px;
+    transition-delay: .05s;
+    color: rgb(224, 57, 57);
+}
+
+.newQuote:hover {
+    cursor: pointer;
+    background: rgb(224, 57, 57);
+    border: rgb(224, 57, 57);
+    color: white;
+}
+
 .quoteCard {
     /* border: 1px solid rgb(255, 0, 255); */
     /* background: rgba(80, 80, 80, 0.925); */
@@ -52,7 +67,7 @@
     color: rgba(255, 255, 255, 0.863);
     margin-top: 5px;
     align-self: flex-end;
-    padding-right: 30px;
+    padding-right: 80px;
     margin-bottom: 0;
 }
 
