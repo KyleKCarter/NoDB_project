@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "img": "http://costumerocket.com/wp-content/uploads/2019/02/Don-Corleone-tuxedo.jpg",
+        "img": "https://i.ytimg.com/vi/SeldwfOwuL8/hqdefault.jpg",
         "Quote": "I'm going to make him an offer he can't refuse.",
         "Character": "Don Corleone",
         "Movie": "The Godfather"
@@ -9,7 +9,7 @@
 
     {
         "id": 2,
-        "img": "https://di2ponv0v5otw.cloudfront.net/posts/2018/08/08/5b6b985c2beb79a3533a38bc/m_5b6b98e02aa96a8fc165e052.jpg",
+        "img": "https://s17708.pcdn.co/wp-content/uploads/2015/09/DeNiroAn2_Splash.jpg",
         "Quote": "You talking to me?",
         "Character": "Travis Bickle",
         "Movie": "Taxi Driver"
@@ -17,7 +17,7 @@
 
     {
         "id": 3,
-        "img": "https://cdn-static.denofgeek.com/sites/denofgeek/files/styles/main_wide/public/0/27/dr.no_.sean-connery.jpg?itok=AZj5hkrN",
+        "img": "https://i.pinimg.com/originals/78/cb/d2/78cbd2d979f8190d4dc6505ac7c897de.jpg",
         "Quote": "Bond. James Bond.",
         "Character": "James Bond",
         "Movie": "Dr. No"
@@ -25,7 +25,7 @@
 
     {
         "id": 4,
-        "img": "https://www.filmibeat.com/img/2013/06/05-clark-gable-rare-picture-1.jpg",
+        "img": "https://cdn.britannica.com/81/66281-004-32B7AE59/Clark-Gable-Gone-with-the-Wind.jpg",
         "Quote": "Frankly my dear, I don't give a damn.",
         "Character": "Rhett Butler",
         "Movie": "Gone with the Wind"
@@ -33,7 +33,7 @@
 
     {
         "id": 5,
-        "img": "https://i.pinimg.com/originals/e9/06/bc/e906bc4a42b875d756de16b43d2dc20c.jpg",
+        "img": "https://www.thenewstribe.com/wp-content/uploads/2012/06/Henry-Hill-Goodfellas.jpg",
         "Quote": "As far back as I can remember, I always wanted to be a gangster.",
         "Character": "Henry Hill",
         "Movie": "Goodfellas"
@@ -81,7 +81,7 @@
 
     {
         "id": 11,
-        "img": "https://onceuponascreen.files.wordpress.com/2015/09/roy-scheider.jpg",
+        "img": "https://i.ytimg.com/vi/1DCa_o4pqyE/hqdefault.jpg",
         "Quote": "You're gonna need a bigger boat.",
         "Character": "Martin Brody",
         "Movie": "Jaws"
@@ -105,7 +105,7 @@
 
     {
         "id": 14,
-        "img": "https://cdn2.bigcommerce.com/server4900/364bb/products/131097/images/95117/25849__72605.1342529851.380.500.jpg?c=2",
+        "img": "https://i.ytimg.com/vi/mRTEGVoYTTo/hqdefault.jpg",
         "Quote": "Toto, I've got a feeling we're not in Kansas anymore.",
         "Character": "Dorothy Gale",
         "Movie": "The Wizard of Oz"
@@ -121,7 +121,7 @@
 
     {
         "id": 16,
-        "img": "https://freebeacon.com/wp-content/uploads/2014/11/Die-Hard-Is-Not-a-Christmas-Movie-540x239.png",
+        "img": "https://www.telegraph.co.uk/content/dam/films/2016/12/06/403593a_Rex-Features_403593a-Film-Die-Hard_trans_NvBQzQNjv4BqG6uvMzRsA2gL76S9bNdwvpW0P_PYLFy34VlxA148KF4.jpg?imwidth=450",
         "Quote": "Yippeee-ki-yay....",
         "Character": "John McClane",
         "Movie": "Die Hard"
@@ -129,7 +129,7 @@
 
     {
         "id": 17,
-        "img": "https://images-na.ssl-images-amazon.com/images/I/51JfKLfk2SL.jpg",
+        "img": "https://m.media-amazon.com/images/M/MV5BMTI2NTUxMTIzM15BMl5BanBnXkFtZTcwNzI4OTQ4Mg@@._V1_.jpg",
         "Quote": "You've got to ask yourself on question: 'Do I feel lucky?' Well, do ya, punk?",
         "Character": "Harry Callahan",
         "Movie": "Dirty Harry"
@@ -137,7 +137,7 @@
 
     {
         "id": 18,
-        "img": "https://images-na.ssl-images-amazon.com/images/I/51XZeHl16uL._SX466_.jpg",
+        "img": "https://live.staticflickr.com/3409/3326978908_fce678e84c.jpg",
         "Quote": "Say 'hello' to my little friend!",
         "Character": "Tony Montana",
         "Movie": "Scarface"
@@ -153,7 +153,7 @@
 
     {
         "id": 20,
-        "img": "https://m.media-amazon.com/images/M/MV5BMTQ3NzAzNjUxMl5BMl5BanBnXkFtZTYwMTcxMzg2._V1_.jpg",
+        "img": "https://collinwatchesmovies.files.wordpress.com/2018/02/gump.jpg?w=720",
         "Quote": "Mama always said life was like a box of chocolates You never know what you're gonna get.",
         "Character": "Forrest Gump",
         "Movie": "Forrest Gump"
@@ -161,7 +161,7 @@
 
     {
         "id": 21,
-        "img": "https://cinemafanatic.files.wordpress.com/2010/07/casablanca.jpg",
+        "img": "https://i.ytimg.com/vi/cnI-qk55bOQ/hqdefault.jpg",
         "Quote": "Of all the gin joints in all the towns in all the world, she walks into mine.",
         "Character": "Rick Blaine",
         "Movie": "Casablanca"
@@ -185,7 +185,7 @@
 
     {
         "id": 24,
-        "img": "https://cdn2.lamag.com/wp-content/uploads/sites/6/2014/04/climb6601.jpg",
+        "img": "https://sites.temple.edu/americanicons/files/2016/04/C4SD4Ti2EsiqHj3x34QPUv8U.jpeg",
         "Quote": "It ain't about how hard ya hit. It's about how hard you can get hit and keep moving forward. How much you can take and keep moving forward. That's how winning is done!",
         "Character": "Rocky Balboa",
         "Movie": "Rocky"
@@ -193,7 +193,7 @@
 
     {
         "id": 25,
-        "img": "https://miro.medium.com/max/972/0*peE-D_uCk23EL4EL.png",
+        "img": "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters_opt/p-back-to-the-future-michael-j-fox.jpg",
         "Quote": "I know, you did send me back to the future, but I'm back -- I'm back FROM the future...",
         "Character": "Marty McFly",
         "Movie": "Back to the Future Part II"
@@ -217,7 +217,7 @@
 
     {
         "id": 28,
-        "img": "https://mla21yeiph1a.i.optimole.com/l79iqiZeyU8/w:800/h:450/q:auto/https://www.monstersandcritics.com/wp-content/uploads/2018/11/Mufasa.jpg",
+        "img": "https://i2.wp.com/metro.co.uk/wp-content/uploads/2013/06/mufasa.jpg?quality=90&strip=all&zoom=1&resize=644%2C362",
         "Quote": "Remember who you are.",
         "Character": "Mufasa",
         "Movie": "Lion King"
@@ -225,7 +225,7 @@
 
     {
         "id": 29,
-        "img": "https://upload.wikimedia.org/wikipedia/en/2/27/Harry_Callahan.JPG",
+        "img": "data:image/jpeg;base64,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",
         "Quote": "A man's got to know his limitations.",
         "Character": "Harry Callahan",
         "Movie": "Magnum Force"
@@ -241,7 +241,7 @@
 
     {
         "id": 31,
-        "img": "https://static.comicvine.com/uploads/original/11124/111245316/4817427-gladiator%20russell%20crowe.jpg",
+        "img": "https://i.pinimg.com/originals/7c/a4/d0/7ca4d058a605facbed49c1a6f517d56a.jpg",
         "Quote": "Are you not entertained!",
         "Character": "Maximus",
         "Movie": "Gladiator"
@@ -249,7 +249,7 @@
 
     {
         "id": 32,
-        "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/star-wars-admiral-ackbar-1559425317.jpg?crop=0.421xw:1.00xh;0.200xw,0&resize=480:*",
+        "img": "https://www.telegraph.co.uk/content/dam/news/2016/04/05/ackbar_trans_NvBQzQNjv4BquzNJMpt-xp3nPuQhFJOjaI1_Bnx9uINdC_XC5LRmTXQ.jpg?imwidth=450",
         "Quote": "It's a trap!",
         "Character": "Admiral Ackbar",
         "Movie": "Star Wars: Episode VI - Return of the Jedi"
@@ -273,7 +273,7 @@
 
     {
         "id": 35,
-        "img": "https://usercontent2.hubstatic.com/3351295.jpg",
+        "img": "https://i.ytimg.com/vi/mJZZNHekEQw/hqdefault.jpg",
         "Quote": "YOU SHALL NOT PASS!",
         "Character": "Gandalf the Grey",
         "Movie": "The Lord of the Rings: The Fellowship of the Ring"
@@ -329,7 +329,7 @@
 
     {
         "id": 42,
-        "img": "https://i.pinimg.com/originals/eb/a6/55/eba655a1913ad55a5d5cb50e1a5d5f42.jpg",
+        "img": "http://2.bp.blogspot.com/_O3eWfWl7bow/TJT7nzHQ5PI/AAAAAAAAFuo/71piumbjkCA/s1600/apollo-13-ed-harris.jpg",
         "Quote": "Failure is not an option.",
         "Character": "Gene Kranz",
         "Movie": "Apollo 13"
@@ -353,7 +353,7 @@
 
     {
         "id": 45,
-        "img": "https://m.media-amazon.com/images/M/MV5BNzZmM2VhY2ItZTJiOC00YzE0LWJiNzEtNTUxNGFiMTQ3ZDJjXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_.jpg",
+        "img": "https://mania.kr/dvdprime/public_html/g2/data/file/movie/view_thumbnail/981049039_CbzPw6uR_69982a8cd8de531ddbf4e6d3ef887f1f_1455189731_1028.png",
         "Quote": "It is not our abilities that show what we truly are. It is our choices.",
         "Character": "Professor Albus Dumbledore",
         "Movie": "Harry Potter and the Chamber of Secrets"
@@ -361,7 +361,7 @@
 
     {
         "id": 46,
-        "img": "https://cdn-01.independent.ie/entertainment/article29792407.ece/b5418/AUTOCROP/w620/Anchorman.jpg",
+        "img": "https://i.pinimg.com/474x/64/6e/8a/646e8a7cd6d5250d07bda78abd749890--ron-ron-anchorman-.jpg",
         "Quote": "You stay classy, San Diego.",
         "Character": "Ron Burgandy",
         "Movie": "Anchorman: The Legend of Ron Burgundy"
@@ -377,7 +377,7 @@
 
     {
         "id": 48,
-        "img": "https://images.immediate.co.uk/production/volatile/sites/3/2016/09/118089.jpg?quality=90&resize=620,413",
+        "img": "https://vignette.wikia.nocookie.net/harry-potter/images/a/ac/35C4D097-11F1-411B-B36D-3B100B49E5A7.jpeg/revision/latest?cb=20180531212451",
         "Quote": "It is the quality of ones convictions that determines success, not the number of followers.",
         "Character": "Remus Lupin",
         "Movie": "Harry Potter and the Deathly Hallows: Part 2"
@@ -417,7 +417,7 @@
 
     {
         "id": 53,
-        "img": "https://cdn.liquor.com/wp-content/uploads/2013/12/Kevin-Bacon.jpg",
+        "img": "https://cache.moviestillsdb.com/i/500x/rddularp/animal-house-lg.jpg",
         "Quote": "Thank You Sir, Please may I have another.",
         "Character": "Chip Diller",
         "Movie": "National Lampoon's Animal House"
@@ -425,7 +425,7 @@
 
     {
         "id": 54,
-        "img": "https://pbs.twimg.com/profile_images/1017238651716145152/F40HcmzI_400x400.jpg",
+        "img": "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters_opt/p-caddyshack-bill-murray.jpg",
         "Quote": "Cinderella story. Outta nowhere. A former greenskeeper, now, about to become the Masters champion. It looks like a mirac...It's in the hole! It's in the hole! It's in the hole!",
         "Character": "Carl Spackler",
         "Movie": "Caddyshack"
@@ -457,7 +457,7 @@
 
     {
         "id": 58,
-        "img": "https://i.pinimg.com/originals/70/00/e1/7000e13dd31794ea3f2e3bf4d21b66a5.jpg",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/51GgrKK8uCL.jpg",
         "Quote": "Nothing is over...NOTHING!",
         "Character": "John Rambo",
         "Movie": "First Blood"
@@ -481,9 +481,9 @@
 
     {
         "id": 61,
-        "img": "",
+        "img": "http://www.hippoquotes.com/img/blow-quotes-fred-jung/Blow.jpg",
         "Quote": "Sometimes you're flush and sometimes you're bust, and when you're up, it's never as good as it seems, and when you're down, you never think you'll be up again, but life goes on.",
-        "Character": "Frederick Jung",
+        "Character": "Fred Jung",
         "Movie": "Blow"
     }
 ]
