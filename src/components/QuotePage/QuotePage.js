@@ -4,6 +4,7 @@ import "./QuotePage.css";
 //components
 import axios from "axios";
 import LikeButton from "./LikeButton/LikeButton";
+import AddQuote from "./AddQuote/AddQuote";
 
 class QuotePage extends Component {
     constructor() {
@@ -11,6 +12,7 @@ class QuotePage extends Component {
         this.state = {
             quote: []
         }
+        
         this.getNewQuote = this.getNewQuote.bind(this);
     }
 
@@ -49,8 +51,16 @@ class QuotePage extends Component {
         return(
             <div className="quotePage">
                 <nav className="quoteNav">
+                    <button className="addQuote" onClick={this.props.changeViewAdd}>Add Quote</button>
                     <button className="newQuote" onClick={getNewQuote}>New Quote</button>  
                 </nav>
+                {
+                        this.state.currentQuotePage === 'Add'
+                    ?
+                        <AddQuote />
+                    :
+                        null 
+                }
                 <div className="quoteCard">
                     <img src={this.state.quote.img} alt="character_image" className="characterImage"/>
                     <h2 className="quote">"{this.state.quote.Quote}"</h2>
