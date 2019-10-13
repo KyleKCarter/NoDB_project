@@ -36,13 +36,13 @@
 
 .quoteCard {
     /* border: 1px solid rgb(255, 0, 255); */
-    /* background: rgba(80, 80, 80, 0.925); */
+    background: whitesmoke;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80%;
-    width: 50%;
+    height: 75%;
+    width: 60%;
     border-radius: 5px;
 }
 
@@ -55,7 +55,7 @@
 
 .quote {
     /* border: 1px solid teal; */
-    color: rgba(255, 255, 255, 0.863);
+    color: rgba(0, 0, 0, 0.76);
     width: 95%;
     margin-bottom: 0;
     display: flex;
@@ -64,7 +64,7 @@
 
 .character {
     /* border: 1px solid lightskyblue; */
-    color: rgba(255, 255, 255, 0.863);
+    color: rgba(0, 0, 0, 0.76);
     margin-top: 5px;
     align-self: flex-end;
     padding-right: 80px;
@@ -73,7 +73,7 @@
 
 .movie {
     /* border: 1px solid lightskyblue; */
-    color: rgba(255, 255, 255, 0.863);
+    color: rgba(0, 0, 0, 0.76);
     margin-top: 5px;
     align-self: flex-end;
     padding-right: 30px;

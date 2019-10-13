@@ -1,5 +1,5 @@
 .movieQuotes {
-    /* border: 1px solid black; */
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,7 +11,7 @@
     /* border: 1px solid red; */
     display: flex;
     flex-direction: row;
-    height: 15%;
+    height: 12%;
     width: 100%;
     justify-content: space-around;
     align-items: center;

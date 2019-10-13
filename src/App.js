@@ -6,6 +6,7 @@ import "./App.css";
 import HomePage from "./components/HomePage/HomePage";
 import FavoritesPage from "./components/FavoritesPage/FavoritesPage";
 import QuotePage from "./components/QuotePage/QuotePage";
+import HomeFooter from "./components/HomePage/HomeFooter/HomeFooter";
 
 class App extends Component {
   constructor() {
@@ -72,6 +73,9 @@ class App extends Component {
           :
             null
         }
+        <footer>
+        <HomeFooter />
+        </footer>
       </div>
     )
   }

@@ -4,6 +4,7 @@ import axios from "axios";
 
 //components
 import RemoveFavorite from "./RemoveFavorite/RemoveFavorite";
+import Copyright from "./Copyright/Copyright";
 
 
 class FavoritesPage extends Component {
@@ -47,6 +48,9 @@ class FavoritesPage extends Component {
                 <div className="favoriteContent">
                     {mappedFavoriteQuotes}
                 </div>
+                <footer>
+                    <Copyright />
+                </footer>
             </div>
         )
     }

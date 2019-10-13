@@ -1,0 +1,12 @@
+.homeFooter {
+    border: 1px solid black;
+    /* border: 1px solid green; */
+    height: 3vh;
+    width: 99.9vw;
+    background: black;
+}
+
+.homeCopyright {
+    color: rgb(202, 202, 202);
+    font-size: 8px;
+}

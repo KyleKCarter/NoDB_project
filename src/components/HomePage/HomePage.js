@@ -42,7 +42,6 @@ class HomePage extends Component {
                         from your favorite films. Enjoy!</p>
                         <button className="generateButton" onClick={this.handleClick}>Generate Quote</button> 
                     </div>
-           
                 </div>
            </div>
         )

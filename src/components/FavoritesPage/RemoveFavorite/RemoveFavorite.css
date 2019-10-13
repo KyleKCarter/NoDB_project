@@ -4,3 +4,7 @@
     width: 3vw;
     align-self: flex-start;
 }
+
+.dislikeButton:hover {
+    cursor: pointer;
+}
