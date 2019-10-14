@@ -1,0 +1,11 @@
+.deleteButton {
+    border: 1px solid red;
+    color: rgba(255, 255, 255, 0.863);
+    justify-self: flex-end;
+
+}
+
+.deleteButton:hover {
+    cursor: pointer;
+    color: rgba(255, 0, 0, 0.829);
+}

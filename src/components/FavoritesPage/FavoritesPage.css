@@ -1,5 +1,4 @@
 .favoritesPage {
-    /* border: 1px solid red; */
     background-image: url("https://blenderartists.org/uploads/default/original/4X/7/e/2/7e2d7bea4ac21388c4a96e1371f375c4ce00094b.jpg");
     display: flex;
     flex-direction: column;
@@ -8,12 +7,10 @@
 }
 
 .favoritesTitle {
-    /* border: 1px solid red; */
     color: rgba(255, 255, 255, 0.863);
 }
 
 .favoriteContent {
-    /* border: 1px solid green; */
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
@@ -28,4 +25,5 @@
     height: 55%;
     width: 30%;
     background: black;
+    margin-bottom: 3vh;
 }

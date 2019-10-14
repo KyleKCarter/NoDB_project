@@ -53,3 +53,13 @@
     cursor: pointer;
     text-decoration: underline;
 }
+
+.addQuoteButton {
+    /* border: 1px solid black; */
+    color: rgb(202, 202, 202);
+}
+
+.addQuoteButton:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

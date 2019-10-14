@@ -8,6 +8,7 @@ import FavoritesPage from "./components/FavoritesPage/FavoritesPage";
 import QuotePage from "./components/QuotePage/QuotePage";
 import HomeFooter from "./components/HomePage/HomeFooter/HomeFooter";
 import YourQuotesPage from "./components/YourQuotesPage/YourQuotesPage";
+import AddQuote from "./components/AddQuote/AddQuote";
 
 class App extends Component {
   constructor() {
@@ -48,6 +49,7 @@ class App extends Component {
       <div className="movieQuotes">
         <nav className="navBar">
           <h3 className="homeButton" onClick={() => this.setState({currentPage: 'Home'})}>Home</h3>
+          <h3 className="addQuoteButton" onClick={() => this.setState({currentPage: 'Add'})}>Add Quote</h3>
           <h1 className="title">RANDOM MOVIE QUOTES</h1>
           <h3 className="yourQuotesButton" onClick={() => this.setState({currentPage: 'Your Quotes'})}>Your Quotes</h3>
           <h3 className="favoritesButton" onClick={() => this.setState({currentPage: 'Favorite Quotes'})}>Favorites</h3>
@@ -83,6 +85,10 @@ class App extends Component {
           ?
             <YourQuotesPage currentPage={currentPage}
                             changeView={changeView}/>
+          :
+            this.state.currentPage === 'Add'
+          ?
+            <AddQuote />
           :
             null
         }

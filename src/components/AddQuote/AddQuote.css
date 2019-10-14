@@ -1,0 +1,65 @@
+.addQuoteContent {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.newQuoteTitle {
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+.addNewQuoteCard {
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 25%;
+    flex-direction: column;
+    display: flex;
+}
+
+.newQuoteInputFields {
+    /* border: 1px solid black; */
+    background: rgba(80, 80, 80, 0.925);
+    border-radius: 20px;
+    flex-direction: column;
+    padding: 1px 10px 30px 10px;
+    margin-bottom: 20px;
+    display: flex;
+    /* justify-content: center; */
+}
+
+.imageText {
+    color: rgba(255, 255, 255, 0.911);
+    margin-bottom: 0px;
+}
+
+.imgDirections {
+    /* border: 1px solid black; */
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.911);
+}
+
+.quoteText {
+    color: rgba(255, 255, 255, 0.911);
+    margin-bottom: 5px;
+}
+
+.characterText {
+    color: rgba(255, 255, 255, 0.911);
+    margin-bottom: 5px;
+}
+
+.movieText {
+    color: rgba(255, 255, 255, 0.911);
+    margin-bottom: 5px;
+}
+
+.submitQuote {
+    width: 30%;
+    height: 5%;
+    align-self: center;
+}
