@@ -18,7 +18,6 @@
 }
 
 .yourQuoteCard {
-    /* border: 1px solid black; */
     background: black;
     display: flex;
     flex-direction: column;
@@ -29,11 +28,17 @@
     margin-bottom: 3vh;
 }
 
+.deleteButton1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
 .character {
     color: whitesmoke;
     margin-top: 5px;
     align-self: flex-end;
-    padding-right: 50px;
+    padding-right: 80px;
     margin-bottom: 0;
 }
 
@@ -41,5 +46,5 @@
     color: whitesmoke;
     margin-top: 5px;
     align-self: flex-end;
-    width: 40%;
+    padding-right: 20px;
 }

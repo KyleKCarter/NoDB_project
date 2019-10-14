@@ -6,15 +6,16 @@ class AddQuote extends Component {
     constructor() {
         super();
         this.state = {
-            img: "",
+            Img: "",
             Quote: "",  
             Character: "",
-            Movie: ""
+            Movie: "",
+            quote: []
         }
     }
 
     handleImgChange = e => {
-        this.setState({ img: e.target.value })
+        this.setState({ Img: e.target.value })
     }
 
     handleQuoteChange = e => {
@@ -30,10 +31,10 @@ class AddQuote extends Component {
     }
 
     handleClick = (e) => {
-        const{img, Quote, Character, Movie} = this.state;
+        const{Img, Quote, Character, Movie} = this.state;
         e.preventDefault();
         axios.post("/api/addQuote", {
-            img,
+            Img,
             Quote,
             Character,
             Movie
@@ -46,19 +47,38 @@ class AddQuote extends Component {
         })
     }
 
+    componentDidMount() {
+        axios.get("/api/quote")
+        .then(response => {
+            this.setState({quote: response.data});
+        })
+        .catch(error => {
+            console.log(error);
+        })
+    }
+
     render() {
         return(
-            <div className="addQuoteContent">
+            <div className="addQuotePage">
                 <h1 className="newQuoteTitle">Add Quote</h1>
-                <form className="addNewQuoteCard">
-                    <div className="newQuoteInputFields">
-                        <h5 className="imageText">Image: </h5> <p className="imgDirections">Picture should be no bigger than 500x400</p> <input placeholder="Image URL" onChange={this.handleImgChange} />
-                        <h5 className="quoteText">Quote: </h5> <input className="inputQuote" placeholder="Quote" onChange={this.handleQuoteChange} />
-                        <h5 className="characterText">Character: </h5> <input className="inpueCharacter" placeholder="Character" onChange={this.handleCharacterChange} />
-                        <h5 className="movieText">Movie: </h5> <input className="inputMovie" placeholder="Movie" onChange={this.handleMovieChange} />
+                <div className="addQuoteContent">
+                    <form className="addNewQuoteCard">
+                        <div className="newQuoteInputFields">
+                            <h5 className="imageText">Image: </h5> <p className="imgDirections">Picture should be no bigger than 500x400</p> <input placeholder="Image URL" onChange={this.handleImgChange} />
+                            <h5 className="quoteText">Quote: </h5> <input className="inputQuote" placeholder="Quote" onChange={this.handleQuoteChange} />
+                            <h5 className="characterText">Character: </h5> <input className="inpueCharacter" placeholder="Character" onChange={this.handleCharacterChange} />
+                            <h5 className="movieText">Movie: </h5> <input className="inputMovie" placeholder="Movie" onChange={this.handleMovieChange} />
+                        </div>
+                        <button className="submitQuote" onClick={this.handleClick}>Submit Quote</button>
+                    </form>
+                    <div className="quoteCard">
+                        <img src={this.state.quote.img} alt="character_image" className="characterImage"/>
+                        <h2 className="quote">"{this.state.quote.Quote}"</h2>
+                        <h3 className="character">-{this.state.quote.Character}</h3>
+                        <h4 className="movie">({this.state.quote.Movie})</h4>
                     </div>
-                    <button className="submitQuote" onClick={this.handleClick}>Submit Quote</button>
-                </form>
+                </div>
+
             </div>
         )
     }

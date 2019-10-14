@@ -88,7 +88,15 @@ class App extends Component {
           :
             this.state.currentPage === 'Add'
           ?
-            <AddQuote />
+            <AddQuote currentPage={currentPage}
+                      changeView={changeView}
+                      changeViewAdd={changeViewAdd} 
+                      img={img}
+                      quote={quote}
+                      character={character}
+                      movie={movie}
+                      favoriteQuotes={favoriteQuotes}
+                      changeStateFavorite={changeStateFavorite}/>
           :
             null
         }

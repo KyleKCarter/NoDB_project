@@ -27,7 +27,6 @@ class QuotePage extends Component {
         })
     }
 
-
     //function to get new quote from server//
         
     getNewQuote() {

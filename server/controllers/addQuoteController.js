@@ -2,9 +2,9 @@ let addedQuotes = [];
 let id = 1;
 
 function addUserQuote(req, res) {
-    const {img, Quote, Character, Movie} = req.body;
+    const {Img, Quote, Character, Movie} = req.body;
     addedQuotes.push({
-        img,
+        Img,
         Quote,
         Character,
         Movie,
