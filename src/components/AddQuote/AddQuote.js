@@ -71,6 +71,7 @@ class AddQuote extends Component {
                         </div>
                         <button className="submitQuote" onClick={this.handleClick}>Submit Quote</button>
                     </form>
+                    <h3 className="textBetween">What it will look like =></h3>
                     <div className="quoteCard">
                         <img src={this.state.quote.img} alt="character_image" className="characterImage"/>
                         <h2 className="quote">"{this.state.quote.Quote}"</h2>

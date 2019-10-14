@@ -88,6 +88,10 @@
     font-weight: bold;
 }
 
+.textBetween {
+    color: black;
+}
+
 .quoteCard {
     /* border: 1px solid rgb(255, 0, 255); */
     background: black;
@@ -95,7 +99,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 95%;
+    height: 98%;
     width: 45%;
     border-radius: 5px;
+    align-self: flex-start;
 }
