@@ -4,11 +4,16 @@ import "./YourQuotesPage.css";
 
 //components
 import DeleteQuote from "./DeleteQuote/DeleteQuote";
+import UpdateQuote from "./UpdateQuote/UpdateQuote";
 
 class YourQuotesPage extends Component {
     constructor() {
         super();
         this.state = {
+            Img: "",
+            Quote: "",
+            Character: "",
+            Movie: "",
             yourQuotes: []
         }
     }
@@ -24,11 +29,21 @@ class YourQuotesPage extends Component {
         })
     }
 
+    updateQuote = ( id, Quote) => {
+        console.log("updateQuote", id, Quote);
+        axios.put(`/api/addQuote/${this.props.val.id}`, { Quote })
+        .then(response => {
+            console.log("Updated");
+            this.setState({ Quote: response.data });
+        })
+        .catch(error => {
+            console.log(error);
+        })
+    }
+
     updateYourQuotes = newArr => {
         this.setState({ yourQuotes: newArr })
     }
-
-
 
     render() {
         let mappedYourQuotes = this.state.yourQuotes.map(val => {
@@ -39,7 +54,20 @@ class YourQuotesPage extends Component {
                     <h2 className="quote">"{val.Quote}"</h2>
                     <h3 className="character">-{val.Character}</h3>
                     <h4 className="movie">({val.Movie})</h4>
-                    <p className="update">update</p>
+                    <div>
+                        {
+                            this.state.yourQuotes.map( yourQuotes => (
+                                <UpdateQuote val={val}
+                                            id={ yourQuotes.id }
+                                            key={ yourQuotes.id }
+                                            Img={ yourQuotes.Img }
+                                            Quote={ yourQuotes.Quote }
+                                            Character={ yourQuotes.Character }
+                                            Movie={ yourQuotes.Movie }/>
+                            ))
+                        }
+                    </div>
+                    {/* <p className="update">update</p> */}
                 </div>
             )
         })

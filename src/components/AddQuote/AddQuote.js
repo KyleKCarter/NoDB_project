@@ -45,6 +45,10 @@ class AddQuote extends Component {
         .catch(error => {
             console.log(error);
         })
+        // this.setState({ Img: "",
+        //                 Quote: "",
+        //                 Character: "",
+        //                 Movie: ""})
     }
 
     componentDidMount() {

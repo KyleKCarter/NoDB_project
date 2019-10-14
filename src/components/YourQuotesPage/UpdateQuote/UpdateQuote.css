@@ -1,7 +1,9 @@
 .update {
     color: whitesmoke;
-    align-self: flex-start;
-    padding-left: 10px;
+    width: 27vw;
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 7px;
 }
 
 .update:hover{

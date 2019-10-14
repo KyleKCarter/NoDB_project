@@ -1,5 +1,5 @@
 let addedQuotes = [];
-let id = 1;
+let id = 0;
 
 function addUserQuote(req, res) {
     const {Img, Quote, Character, Movie} = req.body;
@@ -18,6 +18,15 @@ function getAddedQuotes(req, res) {
     res.status(200).json(addedQuotes);
 }
 
+function updateQuote(req, res) {
+    for (let i=0; i<addedQuotes.length; i++) {
+        if (addedQuotes[i].id == +req.params.id) {
+            addedQuotes[i].quote = req.body.quote;
+        }
+    }
+    res.status(200).json(addedQuotes)
+}
+
 function deleteQuote(req, res) {
     const {id} = req.params;
     const index = addedQuotes.findIndex(val => {
@@ -34,5 +43,6 @@ function deleteQuote(req, res) {
 module.exports = {
     addUserQuote,
     getAddedQuotes,
+    updateQuote,
     deleteQuote
 }
