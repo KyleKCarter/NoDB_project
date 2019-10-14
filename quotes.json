@@ -541,5 +541,13 @@
         "Quote": "I know things about pigeons.",
         "Character": "Frank Horrigan",
         "Movie": "In the Line of Fire"
+    },
+
+    {
+        "id": 69,
+        "img": "https://thumbs.gfycat.com/CalmObedientErne-size_restricted.gif",
+        "Quote": "Ty Webb: You take drugs? Danny Noonan: Everyday. Ty Webb: Good. So what's the problem?",
+        "Character": "Ty Webb & Danny Noonan",
+        "Movie": "Caddyshack"
     }
 ]
