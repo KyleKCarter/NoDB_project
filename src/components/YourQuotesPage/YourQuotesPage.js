@@ -33,12 +33,12 @@ class YourQuotesPage extends Component {
         })
     }
 
-    updateQuote = ( id, Quote) => {
+    updateQuote = ( id, Img, Quote, Character, Movie) => {
         console.log("updateQuote", id, Quote);
-        axios.put(`/api/addQuote/${id}`, { Quote })
+        axios.put(`/api/addQuote/${id}`, { Img, Quote, Character, Movie })
         .then(response => {
             this.getAllQuotes();
-            this.setState({ Quote: response.data,});
+            this.setState({ Img: response.data, Quote: response.data, Character: response.data, Movie: response.data});
             console.log(this.state.Quote);
         })
         .catch(error => {

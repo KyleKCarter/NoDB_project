@@ -21,7 +21,10 @@ function getAddedQuotes(req, res) {
 function updateQuote(req, res) {
     for (let i=0; i<addedQuotes.length; i++) {
         if (addedQuotes[i].id == +req.params.id) {
+            addedQuotes[i].Img = req.body.Img
             addedQuotes[i].Quote = req.body.Quote;
+            addedQuotes[i].Character = req.body.Character;
+            addedQuotes[i].Movie = req.body.Movie;
         }
     }
     console.log(addedQuotes);
