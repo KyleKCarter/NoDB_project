@@ -6,7 +6,14 @@
     padding-bottom: 7px;
 }
 
-.update:hover{
+.update:hover {
     cursor: pointer;
     text-decoration: underline;
+}
+
+.quoteTextImg {
+    /* border: 1px solid red; */
+    width: 10%;
+    color: whitesmoke;
+
 }

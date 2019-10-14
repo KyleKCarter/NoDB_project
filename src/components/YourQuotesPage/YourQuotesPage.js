@@ -3,8 +3,7 @@ import axios from "axios";
 import "./YourQuotesPage.css";
 
 //components
-import DeleteQuote from "./DeleteQuote/DeleteQuote";
-import UpdateQuote from "./UpdateQuote/UpdateQuote";
+import YourQuoteCard from "./YourQuoteCard/YourQuoteCard";
 
 class YourQuotesPage extends Component {
     constructor() {
@@ -14,12 +13,17 @@ class YourQuotesPage extends Component {
             Quote: "",
             Character: "",
             Movie: "",
+            // editStatus: need to be a ternary
             yourQuotes: []
         }
     }
 
-    componentDidMount() {
+    componentDidMount = () => {
         this.getAllQuotes();
+    }
+
+    updateQuotes = (newQuotes) => {
+        this.setState({ yourQuotes: newQuotes })
     }
 
     getAllQuotes = () => {
@@ -33,62 +37,36 @@ class YourQuotesPage extends Component {
         })
     }
 
-    updateQuote = ( id, Img, Quote, Character, Movie) => {
-        console.log("updateQuote", id, Quote);
-        axios.put(`/api/addQuote/${id}`, { Img, Quote, Character, Movie })
-        .then(response => {
-            this.getAllQuotes();
-            this.setState({ Img: response.data, Quote: response.data, Character: response.data, Movie: response.data});
-            console.log(this.state.Quote);
-        })
-        .catch(error => {
-            console.log(error);
-        })
-    }
-
-    deleteYourQuotes = newArr => {
-        this.setState({ yourQuotes: newArr })
-    }
-
     render() {
-        const {yourQuotes} = this.state;
-        let mappedYourQuotes = this.state.yourQuotes.map(val => {
-            return(
-                <div className="yourQuoteCard">
-                    <DeleteQuote val={val} deleteYourQuotes={this.deleteYourQuotes} />
-                    <img src={val.Img} alt="character_img" className="characterImage"/>
-                    <h2 className="quote">"{val.Quote}"</h2>
-                    <h3 className="character">-{val.Character}</h3>
-                    <h4 className="movie">({val.Movie})</h4>
-                    <div>
-                        {
-                            this.state.yourQuotes.map( yourQuotes => (
-                                <UpdateQuote val={val}
-                                            id={ yourQuotes.id }
-                                            key={ yourQuotes.id }
-                                            Img={ yourQuotes.Img }
-                                            Quote={ yourQuotes.Quote }
-                                            Character={ yourQuotes.Character }
-                                            Movie={ yourQuotes.Movie }
-                                            update={ this.updateQuote }
-                                            yourQuotes={ yourQuotes }/>
-                            ))
-                        }
-                    </div>
-                    {/* <p className="update">update</p> */}
-                </div>
-            )
-        })
-        console.log(this.state.yourQuotes);
+        const {yourQuotes, Img, Quote, Character, Movie} = this.state;
+        const {getAllQuotes} = this;
+        const {componentDidMount} = this;
+        const {updateQuotes} = this;
         return(
             <div className="yourQuotesPage">
                 <nav className="yourQuoteNavBar">
                     <button className="backToAddQuote" onClick={this.props.changeViewAdd}>Add Quote</button>
                 </nav>
                 <h1 className="yourQuotesTitle">Your Quotes</h1>
-                <div className="yourQuotesContent">
-                    {mappedYourQuotes}
-                </div>
+                {
+                    yourQuotes.map((quote, i) => {
+                        const {Character, Img, Movie, Quote, id} = quote;
+                        return <YourQuoteCard  
+                            quote={Quote}
+                            yourQuotes={yourQuotes}
+                            key={i}
+                            id={id}
+                            Img={Img}
+                            Quote={Quote}
+                            Character={Character}
+                            Movie={Movie}
+                            updateQuotes={updateQuotes}
+                            getAllQuotes={getAllQuotes}
+                            // componentDidMount={componentDidMount}
+                        />
+
+                    })
+                }
             </div>
         )
     }

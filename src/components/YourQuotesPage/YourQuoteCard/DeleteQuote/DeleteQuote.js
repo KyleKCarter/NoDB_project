@@ -5,10 +5,10 @@ import "./DeleteQuote.css";
 class DeleteQuote extends Component {
     
     deleteQuote = () => {
-        axios.delete(`/api/addQuote/${this.props.val.id}`)
+        axios.delete(`/api/addQuote/${this.props.id}`)
         .then(response => {
             console.log("Deleted");
-            this.props.deleteYourQuotes(response.data);
+            this.props.updateQuotes(response.data);
         })
         .catch(error => {
             console.log(error);
@@ -17,7 +17,7 @@ class DeleteQuote extends Component {
 
     render() {
         return(
-            <div>
+            <div key={this.props.key}>
                 <p className="deleteButton" onClick={this.deleteQuote}>X</p>
             </div>
         )

@@ -1,5 +1,7 @@
 .yourQuotesPage {
+    /* border: 1px solid red; */
     background-image: url("http://getwallpapers.com/wallpaper/full/1/b/d/829640-gorgerous-movie-backgrounds-1920x1080-ipad-pro.jpg");
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,49 +34,4 @@
     border: rgb(224, 57, 57);
     color: white;
     font-weight: bold;
-}
-
-.yourQuotesContent {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.yourQuoteCard {
-    background: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 55%;
-    width: 30%;
-    border-radius: 5px;
-    margin-bottom: 3vh;
-}
-
-.character {
-    color: whitesmoke;
-    margin-top: 5px;
-    align-self: flex-end;
-    padding-right: 80px;
-    margin-bottom: 0;
-}
-
-.movie {
-    color: whitesmoke;
-    margin-top: 5px;
-    align-self: flex-end;
-    padding-right: 20px;
-}
-
-.update {
-    /* border: 1px solid red; */
-    color: whitesmoke;
-    align-self: flex-start;
-    padding-left: 10px;
-}
-
-.update:hover{
-    cursor: pointer;
-    text-decoration: underline;
 }

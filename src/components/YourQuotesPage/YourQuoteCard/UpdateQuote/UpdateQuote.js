@@ -49,7 +49,7 @@ class UpdateQuote extends Component {
         const { editingImg, editingQuote, editingCharacter, editingMovie } = this.state;
         // console.log( id, Quote );
         return(
-            <div>
+            <div key={this.props.key}>
                 <span>
 
                     {
@@ -57,7 +57,7 @@ class UpdateQuote extends Component {
                         ?
                             <input className="quoteInput" value={ this.state.Img} onChange={ this.handleChangeImg} onKeyPress={this.update} />
                         :
-                            <span className="quoteText">{Img}</span>
+                            <span className="quoteTextImg">{Img}</span>
                     }
                 </span>
                 <span className="update" onClick={ () => this.setState({ editingImg: !editingImg, Img }) }>update img</span>
@@ -67,7 +67,7 @@ class UpdateQuote extends Component {
                         ?
                             <input className="quoteInput" value={ this.state.Quote} onChange={ this.handleChangeQuote} onKeyPress={this.update} />
                         :
-                            <span className="quoteText">{Quote}</span>
+                            <span className="quoteTextQuote">{Quote}</span>
                     }
                 </span>
                 <span className="update" onClick={ () => this.setState({ editingQuote: !editingQuote, Quote }) }>update quote</span>
@@ -77,7 +77,7 @@ class UpdateQuote extends Component {
                         ?
                         <input className="quoteInput" value={ this.state.Character} onChange={ this.handleChangeCharacter} onKeyPress={this.update} />
                         :
-                        <span className="quoteText">{Character}</span>
+                        <span className="quoteTextCharacter">{Character}</span>
                     }
                 </span>
                 <span className="update" onClick={ () => this.setState({ editingCharacter: !editingCharacter, Character }) }>update character</span>
@@ -87,7 +87,7 @@ class UpdateQuote extends Component {
                         ?
                         <input className="quoteInput" value={ this.state.Movie} onChange={ this.handleChangeMovie} onKeyPress={this.update} />
                         :
-                        <span className="quoteText">{Movie}</span>
+                        <span className="quoteTextMovie">{Movie}</span>
                     }
                 </span>
                 <span className="update" onClick={ () => this.setState({ editingMovie: !editingMovie, Movie }) }>update movie</span>
