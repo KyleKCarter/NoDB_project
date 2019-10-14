@@ -1,0 +1,10 @@
+.update {
+    color: whitesmoke;
+    align-self: flex-start;
+    padding-left: 10px;
+}
+
+.update:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}

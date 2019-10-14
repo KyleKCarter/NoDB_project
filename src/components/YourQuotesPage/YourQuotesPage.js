@@ -34,11 +34,12 @@ class YourQuotesPage extends Component {
         let mappedYourQuotes = this.state.yourQuotes.map(val => {
             return(
                 <div className="yourQuoteCard">
-                    <DeleteQuote className="deleteButton1"val={val} updateYourQuotes={this.updateYourQuotes} />
+                    <DeleteQuote val={val} updateYourQuotes={this.updateYourQuotes} />
                     <img src={val.Img} alt="character_img" className="characterImage"/>
                     <h2 className="quote">"{val.Quote}"</h2>
                     <h3 className="character">-{val.Character}</h3>
                     <h4 className="movie">({val.Movie})</h4>
+                    <p className="update">update</p>
                 </div>
             )
         })

@@ -28,12 +28,6 @@
     margin-bottom: 3vh;
 }
 
-.deleteButton1 {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-
 .character {
     color: whitesmoke;
     margin-top: 5px;
@@ -47,4 +41,16 @@
     margin-top: 5px;
     align-self: flex-end;
     padding-right: 20px;
+}
+
+.update {
+    /* border: 1px solid red; */
+    color: whitesmoke;
+    align-self: flex-start;
+    padding-left: 10px;
+}
+
+.update:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
