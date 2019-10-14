@@ -21,11 +21,14 @@ function getAddedQuotes(req, res) {
 function updateQuote(req, res) {
     for (let i=0; i<addedQuotes.length; i++) {
         if (addedQuotes[i].id == +req.params.id) {
-            addedQuotes[i].quote = req.body.quote;
+            addedQuotes[i].Img = req.body.Img;
+            addedQuotes[i].Quote = req.body.Quote;
+            addedQuotes[i].Character = req.body.Character;
+            addedQuotes[i].Movie = req.body.Movie;
         }
     }
-    res.status(200).json(addedQuotes)
-}
+    res.status(200).json(addedQuotes) 
+};
 
 function deleteQuote(req, res) {
     const {id} = req.params;

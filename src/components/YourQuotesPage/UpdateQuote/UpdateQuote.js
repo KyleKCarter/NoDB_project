@@ -6,7 +6,10 @@ class UpdateQuote extends Component {
         super(props);
         this.state = {
             editing: false,
-            Quote: this.props.Quote
+            Img: this.props.Img,
+            Quote: this.props.Quote,
+            Character: this.props.Character,
+            Movie: this.props.Movie
         }
         
         this.handleChange=this.handleChange.bind(this);
@@ -15,13 +18,14 @@ class UpdateQuote extends Component {
 
     handleChange(e) {
         this.setState({ Quote: e.target.value });
+        console.log(e.target.value);
     }
 
     update(e) {
-        const { Quote } = this.state;
-        const { id, edit } = this.props;
+        const { Img, Quote, Character, Movie } = this.state;
+        const { id, update } = this.props;
         if( e.key === "Enter" && Quote.length !== 0 ) {
-            edit( id, Quote );
+            update( id, Quote );
             this.setState({ editing: false });
         }
     }
@@ -29,7 +33,7 @@ class UpdateQuote extends Component {
     render() {
         const { id, Quote } = this.props;
         const { editing } = this.state;
-        console.log( id, Quote );
+        // console.log( id, Quote );
         return(
             <div>
                 <span>
@@ -37,7 +41,7 @@ class UpdateQuote extends Component {
                     {
                             editing
                         ?
-                            <input className="quoteInput" value={ this.state.Quote} onChange={ this.handleChange} onKeyPress={this.edit} />
+                            <input className="quoteInput" value={ this.state.Quote} onChange={ this.handleChange} onKeyPress={this.update} />
                         :
                             <span className="quoteText">{Quote}</span>
                     }

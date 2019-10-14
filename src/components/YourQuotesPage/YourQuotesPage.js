@@ -31,7 +31,7 @@ class YourQuotesPage extends Component {
 
     updateQuote = ( id, Quote) => {
         console.log("updateQuote", id, Quote);
-        axios.put(`/api/addQuote/${this.props.val.id}`, { Quote })
+        axios.put(`/api/addQuote/${id}`, { Quote })
         .then(response => {
             console.log("Updated");
             this.setState({ Quote: response.data });
@@ -63,7 +63,8 @@ class YourQuotesPage extends Component {
                                             Img={ yourQuotes.Img }
                                             Quote={ yourQuotes.Quote }
                                             Character={ yourQuotes.Character }
-                                            Movie={ yourQuotes.Movie }/>
+                                            Movie={ yourQuotes.Movie }
+                                            update={ this.updateQuote }/>
                             ))
                         }
                     </div>
@@ -71,6 +72,7 @@ class YourQuotesPage extends Component {
                 </div>
             )
         })
+        console.log(this.state.yourQuotes);
         return(
             <div className="yourQuotesPage">
                 <h1 className="yourQuotesTitle">Your Quotes</h1>
