@@ -19,6 +19,10 @@ class YourQuotesPage extends Component {
     }
 
     componentDidMount() {
+        this.getAllQuotes();
+    }
+
+    getAllQuotes = () => {
         axios.get("/api/addQuote")
         .then(response => {
             console.log(response.data);
@@ -33,23 +37,25 @@ class YourQuotesPage extends Component {
         console.log("updateQuote", id, Quote);
         axios.put(`/api/addQuote/${id}`, { Quote })
         .then(response => {
-            console.log("Updated");
-            this.setState({ Quote: response.data });
+            this.getAllQuotes();
+            this.setState({ Quote: response.data,});
+            console.log(this.state.Quote);
         })
         .catch(error => {
             console.log(error);
         })
     }
 
-    updateYourQuotes = newArr => {
+    deleteYourQuotes = newArr => {
         this.setState({ yourQuotes: newArr })
     }
 
     render() {
+        const {yourQuotes} = this.state;
         let mappedYourQuotes = this.state.yourQuotes.map(val => {
             return(
                 <div className="yourQuoteCard">
-                    <DeleteQuote val={val} updateYourQuotes={this.updateYourQuotes} />
+                    <DeleteQuote val={val} deleteYourQuotes={this.deleteYourQuotes} />
                     <img src={val.Img} alt="character_img" className="characterImage"/>
                     <h2 className="quote">"{val.Quote}"</h2>
                     <h3 className="character">-{val.Character}</h3>
@@ -64,7 +70,8 @@ class YourQuotesPage extends Component {
                                             Quote={ yourQuotes.Quote }
                                             Character={ yourQuotes.Character }
                                             Movie={ yourQuotes.Movie }
-                                            update={ this.updateQuote }/>
+                                            update={ this.updateQuote }
+                                            yourQuotes={ yourQuotes }/>
                             ))
                         }
                     </div>

@@ -8,7 +8,7 @@ class DeleteQuote extends Component {
         axios.delete(`/api/addQuote/${this.props.val.id}`)
         .then(response => {
             console.log("Deleted");
-            this.props.updateYourQuotes(response.data);
+            this.props.deleteYourQuotes(response.data);
         })
         .catch(error => {
             console.log(error);

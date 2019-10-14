@@ -22,9 +22,9 @@ class UpdateQuote extends Component {
     }
 
     update(e) {
-        const { Img, Quote, Character, Movie } = this.state;
+        const { Quote } = this.state;
         const { id, update } = this.props;
-        if( e.key === "Enter" && Quote.length !== 0 ) {
+        if( e.key === "Enter" && this.props.yourQuotes.length !== 0 ) {
             update( id, Quote );
             this.setState({ editing: false });
         }
