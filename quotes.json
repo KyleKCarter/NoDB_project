@@ -533,5 +533,13 @@
         "Quote": "Show me the money!",
         "Character": "Rod Tidwell",
         "Movie": "Jerry Maguire"
+    },
+
+    {
+        "id": 68,
+        "img": "http://watchesinmovies.info/img/f/InTheLineofFire_Rolex2.jpg",
+        "Quote": "I know things about pigeons.",
+        "Character": "Frank Horrigan",
+        "Movie": "In the Line of Fire"
     }
 ]
