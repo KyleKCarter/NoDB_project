@@ -22,11 +22,12 @@
 }
 
 .addQuote {
-    height: 75%;
+    height: 90%;
     width: 12.5vw;
     border-radius: 10px;
     transition-delay: .05s;
     color: rgb(224, 57, 57);
+    font-weight: bold;
 }
 
 .addQuote:hover {
@@ -34,14 +35,16 @@
     background: rgb(224, 57, 57);
     border: rgb(224, 57, 57);
     color: white;
+    font-weight: bold;
 }
 
 .newQuote {
-    height: 75%;
+    height: 90%;
     width: 12.5vw;
     border-radius: 10px;
     transition-delay: .05s;
     color: rgb(224, 57, 57);
+    font-weight: bold;
 }
 
 .newQuote:hover {
@@ -49,6 +52,7 @@
     background: rgb(224, 57, 57);
     border: rgb(224, 57, 57);
     color: white;
+    font-weight: bold;
 }
 
 .quoteCard {
