@@ -35,3 +35,10 @@
     color: white;
     font-weight: bold;
 }
+
+.yourQuotesPageBodyContent {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-flow: wrap;
+}

@@ -48,25 +48,28 @@ class YourQuotesPage extends Component {
                     <button className="backToAddQuote" onClick={this.props.changeViewAdd}>Add Quote</button>
                 </nav>
                 <h1 className="yourQuotesTitle">Your Quotes</h1>
-                {
-                    yourQuotes.map((quote, i) => {
-                        const {Character, Img, Movie, Quote, id} = quote;
-                        return <YourQuoteCard  
-                            quote={Quote}
-                            yourQuotes={yourQuotes}
-                            key={i}
-                            id={id}
-                            Img={Img}
-                            Quote={Quote}
-                            Character={Character}
-                            Movie={Movie}
-                            updateQuotes={updateQuotes}
-                            getAllQuotes={getAllQuotes}
-                            // componentDidMount={componentDidMount}
-                        />
+                <div className="yourQuotesPageBodyContent">
+                    {
+                        yourQuotes.map((quote, i) => {
+                            const {Character, Img, Movie, Quote, id} = quote;
+                            return <YourQuoteCard  
+                                quote={Quote}
+                                yourQuotes={yourQuotes}
+                                key={i}
+                                id={id}
+                                Img={Img}
+                                Quote={Quote}
+                                Character={Character}
+                                Movie={Movie}
+                                updateQuotes={updateQuotes}
+                                getAllQuotes={getAllQuotes}
+                                // componentDidMount={componentDidMount}
+                            />
 
-                    })
-                }
+                        })
+                    }
+
+                </div>
             </div>
         )
     }
