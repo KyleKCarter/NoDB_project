@@ -13,6 +13,25 @@ class AddQuote extends Component {
             quote: []
         }
     }
+    
+    componentDidMount = () => {
+        this.refreshPage();
+    }
+    
+    refreshPage = () => {
+        axios.get("/api/quote")
+        .then(response => {
+            this.setState({quote: response.data});
+        })
+        .catch(error => {
+            console.log(error);
+        })
+    }
+
+    reset = () => {
+        this.setState({ Img: "", Quote: "", Character: "", Movie: ""});
+        this.refreshPage();
+    }
 
     handleImgChange = e => {
         this.setState({ Img: e.target.value })
@@ -40,26 +59,14 @@ class AddQuote extends Component {
             Movie
         })
         .then(response => {
+            this.reset();
             // console.log(response.data);
         })
         .catch(error => {
             console.log(error);
         })
-        // this.setState({ Img: "",
-        //                 Quote: "",
-        //                 Character: "",
-        //                 Movie: ""})
     }
 
-    componentDidMount() {
-        axios.get("/api/quote")
-        .then(response => {
-            this.setState({quote: response.data});
-        })
-        .catch(error => {
-            console.log(error);
-        })
-    }
 
     render() {
         return(

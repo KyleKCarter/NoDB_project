@@ -10,6 +10,30 @@
     color: rgba(255, 255, 255, 0.863);
 }
 
+.yourQuoteNavBar {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+}
+
+.backToAddQuote {
+    height: 5vh;
+    width: 10vw;
+    border-radius: 10px;
+    transition-delay: .05s;
+    color: rgb(224, 57, 57);
+    font-weight: bold;
+}
+
+.backToAddQuote:hover {
+    cursor: pointer;
+    background: rgb(224, 57, 57);
+    border: rgb(224, 57, 57);
+    color: white;
+    font-weight: bold;
+}
+
 .yourQuotesContent {
     display: flex;
     justify-content: space-around;

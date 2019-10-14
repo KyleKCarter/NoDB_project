@@ -84,7 +84,8 @@ class App extends Component {
             this.state.currentPage === 'Your Quotes'
           ?
             <YourQuotesPage currentPage={currentPage}
-                            changeView={changeView}/>
+                            changeView={changeView}
+                            changeViewAdd={changeViewAdd}/>
           :
             this.state.currentPage === 'Add'
           ?

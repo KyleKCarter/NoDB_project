@@ -82,6 +82,9 @@ class YourQuotesPage extends Component {
         console.log(this.state.yourQuotes);
         return(
             <div className="yourQuotesPage">
+                <nav className="yourQuoteNavBar">
+                    <button className="backToAddQuote" onClick={this.props.changeViewAdd}>Add Quote</button>
+                </nav>
                 <h1 className="yourQuotesTitle">Your Quotes</h1>
                 <div className="yourQuotesContent">
                     {mappedYourQuotes}
